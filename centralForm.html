@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>Creating a form</title>
+        <style>
+          .belowheading {
+          background-color: lightblue;
+          border: 2px solid black;
+          align-self: center; }
+          label {
+            font-weight: bold; 
+            font-size: 24;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+          }
+          input{
+            font-size: 24;
+          }
+          select{
+            font-size: 24;
+          }
+          option {
+            color: blue;
+          }
+          p {
+            color:greenyellow;
+            font-size: 20;
+          }
+        </style>
+    </head>
+    <body style="background-color:cadetblue">
+        <script>
+          const dateAndTime = new Date();
+        </script>
+        <h1 style="color:green; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:82px; text-align: center;">Official Form of CIT Transport App</h1>
+        <svg height="230" width="1000" id="belowheading">
+            <rect x="0" y="20" rx="15" ry="15" width="500" height="400" fill="grey" />
+            <text fill="#ffffff" font-size="20" font-family="Verdana" x="0" y="96" >Notice: When you click "submit", your form will </text>
+            <text fill="#ffffff" font-size="20" font-family="Verdana" x="15" y="122">not be finalized. You will have the option to </text>
+            <text fill="#ffffff" font-size="20" font-family="Verdana" x="15" y="148">revise your request until you click "Finalize"</text>
+            <text fill="#ffffff" font-size="20" font-family="Verdana" x="15" y="174">in the parent dashboard.</text>
+            <text fill="#000000" font-size="15" font-family="Times New Roman" x="850" y="200">V 0.0.3 créé 2/24/2025</text>
+            Sorry, your browser does not support inline SVG.
+        </svg>
+        <br></br><br></br>
+        <div1 id="tab">
+          <h1 style="color:bisque; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Basic Information</h1>
+          <form>
+            <label>Student Name (first, last)</label>
+            <input type="text" id="sfname" value="First Name"></input>
+            <input type="text" id="slname" value="Last Name"></input>
+            <br>
+            <label>School</label>
+            <select id="school" value="Name of school">
+              <option>Deep Run High School</option>
+              <option>Douglas S. Freeman High School</option>
+              <option>Mills G. Godwin High School</option>
+            </select>
+            <br>
+            <label>Student ID Number</label>
+            <input type="text" value="1234567"></input>
+            <label>Grade</label>
+            <select>
+              <option>Pre-K</option>
+              <option>Kindergarten</option>
+              <option>1</option><option>2</option>
+              <option>3</option><option>4</option>
+              <option>5</option><option>6</option>
+              <option>7</option><option>8</option>
+              <option>9</option><option>10</option>
+              <option>11</option><option>12</option>
+            </select>
+            <br>
+            <label>Requested School Year</label>
+            <select>
+              <option>2024-2025</option>
+              <option>2025-2026</option>
+              <option>2026-2027</option>
+            </select>
+            <br>
+            <label>Gender</label>
+            <select>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Non-Binary</opotion>
+              <option>Other</option>
+            </select>
+            <br>
+            <h1 style="color:plum; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Associated Adult(s)' Information</h1>
+            <label>Parent/Guardian #1</label>
+            <p>Legal Name (first, last)</p>
+            <input type="text" value="John" name="First Name" id="p1FName"></input>
+            <input type="text" value="Doe" name="Last Name" id="p1LName"></input>
+            <p>Phone Number</p>
+            <input type="text" value="(###) ###-#### or ##########"></input>
+            <br>
+            <label>Parent/Guardian #2</label>
+            <p>Legal Name (first, last)</p>
+            <input type="text" value="John" name="First Name" id="p2FName"></input>
+            <input type="text" value="Doe" name="Last Name" id="p2LName"></input>
+            <p>Phone Number</p>
+            <input type="text" value="(###) ###-#### or ##########" name="Gaurdiam #2 Phone Number" id="p2PN"></input>
+            <br>
+            <label>Home Address (in-district)</label>
+            <p>Street Address</p>
+            <input type="text" value="4801 Twin Hickory Rd" name="Street Address" id="strAdd"></input>
+            <p>City</p>
+            <input type="text" value="Richmond" name="City" id="city"></input>
+            <p>State</p>
+            <input type="text" value="Virginia" name="State" id="state"></input>
+            <p>Zip Code</p>
+            <input type="text" value="23059" name="Zip Code" id="zcode"></input>
+            <br>
+            <label>Emergency contacts</label>
+            <p>Full Name #1</p><input type="text"></input><p>Phone Number #1</p><input type="text"></input>
+            <p>Full Name #2</p><input type="text"></input><p>Phone Number #2</p><input type="text"></input>
+            <br>
+            <div2 id="side">
+              <h1 style="color:red; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Health Information</h1>
+              <form>
+                <label>Medical Devices</label>
+                <select>
+                  <option>None</option>
+                  <option>Manual wheelchair</option>
+                  <option>Motorized wheelchair</option>
+                  <option>Crutches</option>
+                  <option>Walker</option>
+                  <option>Oxygen</option>
+                  <option>Splint (safety equipment)</option>
+                  <option>Brace (safety equipment)</option>
+                  <option>Other safety equipment</option>
+                </select>
+                <label>Required Ammenities</label>
+                <select>
+                  <option>None</option>
+                  <option>Wheelchair holder</option>
+                  <option>Car seat (location with seatbelt)</option>
+                </select>
+                <br>
+                <label>Safety Vest Size</label>
+                <select>
+                  <option>Small</option>
+                  <option>Medium</option>
+                  <option>Large</option>
+                  <option>Extra-large</option>
+                </select>
+                <br>
+                <label>Caretaker Information (type N/A in both boxes if none)</label>
+                <p>Full Name</p>
+                <input type="text"></input>
+                <p>Phone Number</p>
+                <input type="text"></input>
+                <br>
+                <label>Do you have a DNR?</label>
+                <select>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div2>
+              <h1 style="color:blue; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Pertinent Student Behavioral Information</h1>
+              <label>Does your student often display aggressive or dangerous behavior?</label>
+              <select>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+              <label>Is your student non-verbal in English?</label>
+              <select>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+              <br>
+              <label>Please describe any other pertinent behavior to the bus driver and other adults (type N/A if none).</label>
+              <br>
+              <textarea style="width: 1000px; height: 300px;" rows="5" cols="50"></textarea>
+            </form>
+        </div1>
+</html>
