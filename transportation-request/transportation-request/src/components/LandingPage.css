@@ -1,0 +1,433 @@
+:root {
+  --primary-color: #1565c0;
+  --secondary-color: #ffa000;
+  --text-color: #333333;
+  --background-color: #f5f7fa;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.landing-page {
+  background-color: var(--background-color);
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/workspaces/transportationapp/transportation-request/public/background.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  color: var(--white);
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar.scrolled {
+  background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+
+.feature-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.cta-section {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 4rem 0;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0d47a1;
+}
+
+.btn-outline-light {
+  color: var(--white);
+  border-color: var(--white);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.contact-section {
+  background-color: var(--white);
+  color: var(--text-color);
+  padding: 5rem 0;
+}
+
+.contact-section h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(21, 101, 192, 0.25);
+}
+
+.contact-form .btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  width: 100%;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #0d47a1;
+}
+
+footer {
+  background-color: #333;
+  color: var(--white);
+  padding: 2rem 0;
+}
+
+footer h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+footer .nav-link {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+footer .nav-link:hover {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 60vh;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+}
+
+
+
+/* Existing styles... */
+
+/* Login and Register Page Styles */
+.login-page,
+.register-page {
+  background-color: var(--background-color);
+  padding-top: 80px; /* Add space for the fixed navbar */
+}
+
+.login-card,
+.register-page .card {
+  background-color: var(--white);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h2,
+.register-page .card h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.login-card .form-label,
+.register-page .card .form-label {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.login-card .form-control,
+.register-page .card .form-control,
+.register-page .card .form-select {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card .form-control:focus,
+.register-page .card .form-control:focus,
+.register-page .card .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(21, 101, 192, 0.25);
+}
+
+.login-card .btn-primary,
+.register-page .card .btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.login-card .btn-primary:hover,
+.register-page .card .btn-primary:hover {
+  background-color: #0d47a1;
+}
+
+.login-card .form-check-label,
+.register-page .card .form-check-label {
+  color: var(--text-color);
+}
+
+.login-card a,
+.register-page .card a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-card a:hover,
+.register-page .card a:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
+/* Register Page Specific Styles */
+.register-page .card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.register-page .form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+}
+
+@media (max-width: 768px) {
+  .login-card,
+  .register-page .card {
+    margin-top: 2rem;
+  }
+}
+
+/* Team Page Styles */
+.team-page {
+  background-color: var(--background-color);
+  padding-top: 80px; /* Space for fixed navbar */
+}
+
+.team-page .card {
+  background-color: var(--white);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-page h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.team-page p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid var(--primary-color);
+}
+
+.team-member h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+/* Parent Dashboard Styles */
+.dashboard-page {
+  background-color: var(--background-color);
+  padding-top: 80px; /* Space for fixed navbar */
+}
+
+.dashboard-page h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.dashboard-page h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.dashboard-page .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-page .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-page .progress-bar {
+  background-color: var(--primary-color);
+}
+
+.dashboard-page .btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.dashboard-page .btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.dashboard-page .btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.dashboard-page .btn-info:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+.dashboard-page .alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.dashboard-page .notification-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-page h2 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-page h3 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
